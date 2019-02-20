@@ -2,18 +2,26 @@
 @media (max-width: 400px) {
 	#container {
 		width: 100%;
-		grid-template-columns: 1fr;	
+		grid-template-columns: 1fr;
+		background-color: rgb(0,200,255);
+		grid-gap: 0;
 	}
-	#title, #login, #sign-up, #menu, #post, #posts  { 
+	#title, #login, #sign-up, #menu, #post, #posts {
 		grid-column: 1;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		align-self: center;
 	}
-	
+	input, button {
+		display: block;
+		margin: 10px auto;
+	}
 	#title {
 		grid-row: 1;
 	}
-	
 	#login {
-		grid-row: 6;
+		grid-row: 2;
 	}
 	#sign-up {
 		grid-row: 3;
@@ -21,59 +29,65 @@
 	#menu {
 		grid-row: 4;
 	}
-	
+
 	#post {
 		grid-row: 5;
 	}
-	
+
 	#posts {
-		grid-row: 2;
+		grid-row: 6;
 	}
-		
+	.post{
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+
 }
 
 /* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
 	#container {
-		width: 100%;	
+		width: 100%;
+		background-color: rgb(0,255,200);
 	}
-	
-	#post {
-		grid-column: 3 / span 1;
+	#title{
 		grid-row: 1;
-	}
-	
-	#posts {
-		grid-column: 1 / span 3;
-		grid-row: 2;
-	}
-	
-	#login, #sign-up, #menu {
-		grid-row: 3;
-	}
-	
-	#login { 
 		grid-column: 1;
 	}
-	#sign-up {
+
+	#post {
 		grid-column: 2;
+		grid-row: 2;
+		justify-self: center;
+	}
+
+	#posts {
+		grid-column: 1 / span 3;
+		grid-row: 3;
+	}
+	.post{
+		margin: 10px auto;
+		text-align: center;
+		width: 80%;
+		outline-style: solid;
+		outline-color: blue;
+		padding: 5%;
+	}
+
+	#login {
+		grid-row: 1;
+		grid-column: 3;
+		align-self: center;
+	}
+	#sign-up {
+		grid-row: 2;
+		grid-column: 3;
+		align-self: center;
 	}
 	#menu {
-		grid-column: 3;
+		grid-row: 1;
+		grid-column: 2;
+		align-self: center;
 	}
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,19 @@
+/* Menu Flex Box */
+#menu-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    justify-content: flex-end;
+}
+.menu{
+    align-content: space-around;
+}
+#menu-item{
+    flex-basis: 200px;
+}
+
+#menu-list li{
+    margin-left: 1em;
+    flex-grow: 1;
+}
